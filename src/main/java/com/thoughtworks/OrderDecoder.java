@@ -5,7 +5,6 @@ import java.util.List;
 public class OrderDecoder {
 
     private List<Dish> dishList;
-
     private String selectedItems;
 
     public OrderDecoder(List<Dish> dishList, String selectedItems) {
