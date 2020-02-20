@@ -1,6 +1,6 @@
 package com.thoughtworks;
 
-public class NoPromCal extends PromCal{
+public class NoPromCal extends PromCal {
 
     public NoPromCal(OrderList orderList) {
         super(orderList);
