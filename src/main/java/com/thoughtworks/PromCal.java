@@ -15,6 +15,7 @@ public abstract class PromCal {
 
     public PromCal(OrderList orderList) {
         this.orderList = orderList;
+        costCal();
     }
 
     public double getCost() {
