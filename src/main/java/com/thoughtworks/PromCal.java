@@ -18,10 +18,6 @@ public abstract class PromCal {
         actualCostCal();
     }
 
-    public double getCost() {
-        return cost;
-    }
-
     public double getSavedCost() {
         return savedCost;
     }
