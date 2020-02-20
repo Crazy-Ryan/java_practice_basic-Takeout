@@ -22,7 +22,7 @@ public class HalfPromCal extends PromCal {
             accumulator += subtotal;
         }
         actualCost = accumulator;
-        savedCost = cost-actualCost;
+        savedCost = cost - actualCost;
     }
 
     private boolean isInPromDishList(Dish dish) {
