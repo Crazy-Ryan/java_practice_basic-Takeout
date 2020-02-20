@@ -8,9 +8,11 @@ public class ReachPromCal extends PromCal {
 
     @Override
     public void actualCostCal() {
-        if(cost > 30){
+        if (cost > 30) {
             savedCost = 6;
-            actualCost = cost - savedCost;
+        } else {
+            savedCost = 0;
         }
+        actualCost = cost - savedCost;
     }
 }
