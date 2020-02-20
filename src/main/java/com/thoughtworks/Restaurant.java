@@ -7,8 +7,7 @@ public class Restaurant {
 
     public String bestCharge(String selectedItems) {
         OrderList orderList = new OrderDecoder(DataProvider.getDishes(), selectedItems).decode();
-        ReceiptPrinter receiptPrinter = new ReceiptPrinter();
-        return receiptPrinter.print(findLowestCost(orderList));
+        return new ReceiptPrinter().print(findLowestCost(orderList));
     }
 
     private PromCal findLowestCost(OrderList orderList) {
