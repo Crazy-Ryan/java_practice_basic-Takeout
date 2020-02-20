@@ -16,6 +16,7 @@ public abstract class PromCal {
     public PromCal(OrderList orderList) {
         this.orderList = orderList;
         costCal();
+        actualCostCal();
     }
 
     public double getCost() {
@@ -30,13 +31,14 @@ public abstract class PromCal {
         return actualCost;
     }
 
-    public abstract void actualCostCal ();
-    protected void costCal(){
+    protected void costCal() {
         double accumulator = 0;
-        for(SingleDish singleDish : orderList.getList()){
-            accumulator += singleDish.getPrice()*singleDish.getQuantity();
+        for (SingleDish singleDish : orderList.getList()) {
+            accumulator += singleDish.getPrice() * singleDish.getQuantity();
         }
         this.cost = accumulator;
     }
+
+    protected abstract void actualCostCal();
 
 }
