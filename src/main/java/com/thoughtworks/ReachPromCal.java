@@ -4,7 +4,6 @@ public class ReachPromCal extends PromCal {
 
     public ReachPromCal(OrderList orderList) {
         super(orderList);
-        costCal();
     }
 
     @Override
