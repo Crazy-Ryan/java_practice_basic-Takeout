@@ -21,8 +21,6 @@ public class Restaurant {
         PromCal promSelected = promList.get(0);
         for (PromCal prom : promList) {
             if (prom.getActualCost() < promSelected.getActualCost()) {
-                double promCost = prom.getActualCost();
-                double seleCost = promSelected.getActualCost();
                 promSelected = prom;
             }
         }
