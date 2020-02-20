@@ -1,7 +1,5 @@
 package com.thoughtworks;
 
-import org.graalvm.compiler.lir.alloc.lsra.LinearScan;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +13,7 @@ public abstract class PromCal {
 
     public PromCal(OrderList orderList) {
         this.orderList = orderList;
+        promDish = new ArrayList<>();
         costCal();
         actualCostCal();
     }

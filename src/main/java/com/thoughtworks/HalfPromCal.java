@@ -1,5 +1,6 @@
 package com.thoughtworks;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class HalfPromCal extends PromCal {
