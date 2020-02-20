@@ -1,16 +1,17 @@
 package com.thoughtworks;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class OrderList {
 
-    private ArrayList<SingleDish> list;
+    private List<SingleDish> list;
 
     public OrderList() {
         list = new ArrayList<>();
     }
 
-    public ArrayList<SingleDish> getList() {
+    public List<SingleDish> getList() {
         return list;
     }
 
